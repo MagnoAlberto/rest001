@@ -1,0 +1,407 @@
+PowerShell 7.2.1
+Copyright (c) Microsoft Corporation.
+
+https://aka.ms/powershell
+Type 'help' to get help.
+
+PS C:\Users\magno> wsl
+Welcome to Ubuntu 20.04 LTS (GNU/Linux 5.10.60.1-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Tue Feb 22 10:24:30 -03 2022
+
+  System load:  0.0                Processes:    8
+  Usage of /:   1.7% of 250.98GB   Users logged in:    0
+  Memory usage: 5%                 IPv4 address for eth0: 172.25.24.217
+  Swap usage:   0%
+
+
+300 updates can be installed immediately.
+135 of these updates are security updates.
+To see these additional updates run: apt list --upgradable
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+/usr/lib/ubuntu-release-upgrader/release-upgrade-motd: 31: cannot create /var/lib/ubuntu-release-upgrader/release-upgrade-available: Permission denied
+
+
+This message is shown once once a day. To disable it please create the
+/home/magno/.hushlogin file.
+magno@xenon:/mnt/c/Users/magno$ sudo apt update
+[sudo] password for magno:
+Hit:1 http://ppa.launchpad.net/ondrej/nginx/ubuntu focal InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Get:3 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:4 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:5 http://ppa.launchpad.net/ondrej/php/ubuntu focal InRelease [23.9 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:7 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [1263 kB]
+Get:8 http://ppa.launchpad.net/ondrej/php/ubuntu focal/main amd64 Packages [101 kB]
+Get:9 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1598 kB]
+Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main Translation-en [306 kB]
+Get:11 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [14.7 kB]
+Get:12 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [818 kB]
+Get:13 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [116 kB]
+Get:14 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [500 B]
+Get:15 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [905 kB]
+Get:16 http://archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [201 kB]
+Get:17 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [20.1 kB]
+Get:18 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [23.7 kB]
+Get:19 http://archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [7312 B]
+Get:20 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [580 B]
+Get:21 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [21.6 kB]
+Get:22 http://archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [15.0 kB]
+Get:23 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [716 B]
+Get:24 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [221 kB]
+Get:25 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [9556 B]
+Get:26 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [764 kB]
+Get:27 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [109 kB]
+Get:28 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [504 B]
+Get:29 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [679 kB]
+Get:30 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [116 kB]
+Get:31 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [13.1 kB]
+Get:32 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [20.7 kB]
+Get:33 http://security.ubuntu.com/ubuntu focal-security/multiverse Translation-en [5196 B]
+Get:34 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [500 B]
+Fetched 7710 kB in 14s (568 kB/s)
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+279 packages can be upgraded. Run 'apt list --upgradable' to see them.
+magno@xenon:/mnt/c/Users/magno$ cd ~
+magno@xenon:~$ cd www
+magno@xenon:~/www$ mkdir rest001
+magno@xenon:~/www$ cd rest001/
+magno@xenon:~/www/rest001$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (rest001)
+version: (1.0.0)
+description:
+entry point: (index.js)
+test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to /home/magno/www/rest001/package.json:
+
+{
+  "name": "rest001",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes)
+npm notice
+npm notice New minor version of npm available! 8.3.0 -> 8.5.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v8.5.1
+npm notice Run npm install -g npm@8.5.1 to update!
+npm notice
+magno@xenon:~/www/rest001$ history | grep snow
+  275  npm install --save-dev snowpack
+  276  snowpack dev
+  277  npx snowpack
+  278  npx snowpack dev
+  320  npm install --save-dev babel-cli babel-preset-env snowpack
+  476  npm --save-dev snowpack
+  477  npm install --save-dev snowpack
+  484  npm install --save-dev @snowpack/plugin-vue
+  486  snowpack init
+  487  npm snowpack init
+  488  npx snowpack
+  489  npx snowpack init
+  490  vim snowpack.config.js
+  491  npx snowpack --help
+  492  npx snowpack --config
+  493  npx snowpack dev
+  495  npx create-snowpack-app vue-snowpack --template @snowpack/app-template-minimal
+  496  cd vue-snowpack/
+  502  npm install @snowpack/plugin-vue --save-dev
+  504  vim snowpack.config.mjs
+  571  npm install --save-dev snowpack
+  574  snowpack dev
+  575  npm snowpack dev
+  576  npx snowpack dev
+  579  npx snowpack dev
+  582  npx create-snowpack-app vue004 --template @sno
+pack/app-template-minimal
+  590  npm install --save-dev @snowpack/plugin-vue
+  604  npx snowpack dev
+  613  npx snowpack dev
+  645  history | grep snowpack
+  646  npm install --save-dev snowpack
+  647  npm install @snowpack/plugin-vue --save-dev
+  648  npx snowpack dev
+  655  npx snowpack dev
+  656  npmx snowpack int
+  657  npx snowpack init
+  659  npx snowpack dev
+  661  npx create-snowpack-app kiko1 --template [@sno
+pack/app-template-react]
+  662  npx create-snowpack-app kiko1 --template @snowpack/app-template-react
+  670  npx create-snowpack-app kiko1 --template @snowpack/app-template-vue
+  672  ren kiko1/ snow1
+  673  mv kiko1/ snow1
+  674  cd snow1/
+  684  mv snow1/ www/
+  691  cd snow1/
+  699  mkdir snow0
+  700  npx create-snowpack-app proj --template @snowpack/app-template-blank
+  702  cd snow
+  703  cd snow0
+  706  rm snow0/
+  707  rm -rf snow0
+  709  mv proj/ snow0
+  710  cd snow0
+  719  snowpack --optimize
+  720  npm snowpack --optimize
+  721  npx snowpack --optimize
+  722  npx snowpack build --optimize
+  723  npx snowpack build
+  726  snowpack create sno2
+  727  npx snowpack create snow2
+  728  npx snowpack
+  730  npx snowpack
+  732  npx snowpack
+  733  npx create-snowpack-app snow2
+  734  snowpack --help
+  735  npm snowpack --help
+  736  npm snowpack help
+  737  npx snowpack help
+  738  npx snowpack --help
+  739  npx create-snowpack-app snow2 --template @snowpack/app-template-blank
+  740  cd snow2
+  746  cd snow1
+  750  cd snow2
+  753  cd snow1
+  758  cd snow1
+  760  cd snow1/
+  799  touch snow1.conf
+  800  sudo touch snow1.conf
+  802  chmod +x snow1.conf
+  803  sudo chmod +x snow1.conf
+  805  sudo chmod 666 snow1.conf
+  867  history | grep snow
+magno@xenon:~/www/rest001$ ll
+total 12
+drwxr-xr-x  2 magno magno 4096 Feb 22 10:25 ./
+drwxr-xr-x 20 magno magno 4096 Feb 22 10:25 ../
+-rw-r--r--  1 magno magno  203 Feb 22 10:25 package.json
+magno@xenon:~/www/rest001$ cd ..
+magno@xenon:~/www$ rm -rf rest001/
+magno@xenon:~/www$ npx create-snowpack-app rest001
+[ERROR] Missing --template argument. https://github.com/snowpackjs/snowpack
+magno@xenon:~/www$ npx create-snowpack-app rest001 --t
+emplate @snopack/app-template-blank
+
+[ERROR] Unable to find "@snopack/app-template-blank" in the npm registry.
+[ERROR] Cannot continue safely. Exiting...
+magno@xenon:~/www$ npx create-snowpack-app rest001 --template @snowpack/app-template-blank
+
+  - Using template @snowpack/app-template-blank
+  - Creating a new project in /home/magno/www/rest001
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+added 404 packages, and audited 405 packages in 21s
+
+52 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+  - Initializing git repo.
+
+  - Could not complete git repository initialization.
+
+Quickstart:
+
+  cd rest001
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+magno@xenon:~/www$ cd rest001/
+magno@xenon:~/www/rest001$ ll
+total 344
+drwxr-xr-x   6 magno magno   4096 Feb 22 10:28 ./
+drwxr-xr-x  20 magno magno   4096 Feb 22 10:27 ../
+drwxr-xr-x   7 magno magno   4096 Feb 22 10:28 .git/
+-rw-r--r--   1 magno magno     28 Feb 22 10:27 .gitignore
+-rw-r--r--   1 magno magno     52 Feb 22 10:27 .prettierrc
+-rw-r--r--   1 magno magno    822 Feb 22 10:27 README.md
+drwxr-xr-x 355 magno magno  12288 Feb 22 10:28 node_modules/
+-rw-r--r--   1 magno magno 296251 Feb 22 10:28 package-lock.json
+-rw-r--r--   1 magno magno    406 Feb 22 10:27 package.json
+drwxr-xr-x   2 magno magno   4096 Feb 22 10:27 public/
+-rw-r--r--   1 magno magno    516 Feb 22 10:27 snowpack.config.mjs
+drwxr-xr-x   2 magno magno   4096 Feb 22 10:27 src/
+magno@xenon:~/www/rest001$ npm run start
+
+> start
+> snowpack dev
+
+[11:31:13] [snowpack] Welcome to Snowpack! Because this is your first time running
+this project, Snowpack needs to prepare your dependencies. This is a one-time step
+and the results will be cached for the lifetime of your project. Please wait...
+[11:31:13] [snowpack] + canvas-confetti@1.5.1
+[11:31:13] [snowpack] Ready!
+[11:31:13] [snowpack] Server started in 11ms.
+[11:31:13] [snowpack] Local: http://localhost:8080
+[11:31:13] [snowpack] Network: http://172.25.24.217:8080
+⠦ watching for file changes...^C
+magno@xenon:~/www/rest001$
+magno@xenon:~/www/rest001$ code .
+Updating VS Code Server to version f80445acd5a3dadef24aa209168452a3d97cc326
+Removing previous installation...
+Installing VS Code Server for x64 (f80445acd5a3dadef24aa209168452a3d97cc326)
+Downloading: 100%
+Unpacking: 100%
+Unpacked 2158 files and folders to /home/magno/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326.
+magno@xenon:~/www/rest001$ npm install --save-dev axios
+
+added 2 packages, and audited 407 packages in 1s
+
+53 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+magno@xenon:~/www/rest001$ npm run start
+
+> start
+> snowpack dev
+
+[11:38:37] [snowpack] Ready!
+[11:38:37] [snowpack] Server started in 19ms.
+[11:38:37] [snowpack] Local: http://localhost:8080
+[11:38:37] [snowpack] Network: http://172.25.24.217:8080
+[11:39:30] [snowpack] File changed: src/index.js
+[11:40:01] [snowpack] File changed: public/index.html[11:40:15] [snowpack] File changed: public/index.html[11:40:17] [snowpack] File changed: public/index.html[11:43:21] [snowpack] File changed: public/index.html(x5)
+[11:43:30] [snowpack] File changed: src/index.js
+[11:52:32] [snowpack] File changed: public/index.html
+[11:52:57] [snowpack] File changed: src/index.js (x2)
+[11:53:14] [snowpack] File changed: public/index.html
+[11:54:04] [snowpack] File changed: src/index.js (x5)
+[11:58:27] [snowpack] + axios@0.26.0
+[12:08:46] [snowpack] File changed: src/index.js (x13)
+[12:10:29] [snowpack] File changed: public/index.html
+[12:13:00] [snowpack] File changed: src/index.js (x5)
+[12:13:10] [snowpack] File changed: public/index.html
+[12:19:45] [snowpack] File changed: src/index.js (x11)
+⠙ watching for file changes...^C
+magno@xenon:~/www/rest001$
+magno@xenon:~/www/rest001$ history | grep snow
+  275  npm install --save-dev snowpack
+  276  snowpack dev
+  277  npx snowpack
+  278  npx snowpack dev
+  320  npm install --save-dev babel-cli babel-preset-env snowpack
+  476  npm --save-dev snowpack
+  477  npm install --save-dev snowpack
+  484  npm install --save-dev @snowpack/plugin-vue
+  486  snowpack init
+  487  npm snowpack init
+  488  npx snowpack
+  489  npx snowpack init
+  490  vim snowpack.config.js
+  491  npx snowpack --help
+  492  npx snowpack --config
+  493  npx snowpack dev
+  495  npx create-snowpack-app vue-snowpack --template @snowpack/app-template-minimal
+  496  cd vue-snowpack/
+  502  npm install @snowpack/plugin-vue --save-dev
+  504  vim snowpack.config.mjs
+  571  npm install --save-dev snowpack
+  574  snowpack dev
+  575  npm snowpack dev
+  576  npx snowpack dev
+  579  npx snowpack dev
+  582  npx create-snowpack-app vue004 --template @sno
+pack/app-template-minimal
+  590  npm install --save-dev @snowpack/plugin-vue
+  604  npx snowpack dev
+  613  npx snowpack dev
+  645  history | grep snowpack
+  646  npm install --save-dev snowpack
+  647  npm install @snowpack/plugin-vue --save-dev
+  648  npx snowpack dev
+  655  npx snowpack dev
+  656  npmx snowpack int
+  657  npx snowpack init
+  659  npx snowpack dev
+  661  npx create-snowpack-app kiko1 --template [@sno
+pack/app-template-react]
+  662  npx create-snowpack-app kiko1 --template @snowpack/app-template-react
+  670  npx create-snowpack-app kiko1 --template @snowpack/app-template-vue
+  672  ren kiko1/ snow1
+  673  mv kiko1/ snow1
+  674  cd snow1/
+  684  mv snow1/ www/
+  691  cd snow1/
+  699  mkdir snow0
+  700  npx create-snowpack-app proj --template @snowpack/app-template-blank
+  702  cd snow
+  703  cd snow0
+  706  rm snow0/
+  707  rm -rf snow0
+  709  mv proj/ snow0
+  710  cd snow0
+  719  snowpack --optimize
+  720  npm snowpack --optimize
+  721  npx snowpack --optimize
+  722  npx snowpack build --optimize
+  723  npx snowpack build
+  726  snowpack create sno2
+  727  npx snowpack create snow2
+  728  npx snowpack
+  730  npx snowpack
+  732  npx snowpack
+  733  npx create-snowpack-app snow2
+  734  snowpack --help
+  735  npm snowpack --help
+  736  npm snowpack help
+  737  npx snowpack help
+  738  npx snowpack --help
+  739  npx create-snowpack-app snow2 --template @snowpack/app-template-blank
+  740  cd snow2
+  746  cd snow1
+  750  cd snow2
+  753  cd snow1
+  758  cd snow1
+  760  cd snow1/
+  799  touch snow1.conf
+  800  sudo touch snow1.conf
+  802  chmod +x snow1.conf
+  803  sudo chmod +x snow1.conf
+  805  sudo chmod 666 snow1.conf
+  867  history | grep snow
+  871  npx create-snowpack-app rest001
+  872  npx create-snowpack-app rest001 --template @snopack/app-template-blank
+  873  npx create-snowpack-app rest001 --template @snowpack/app-template-blank
+  880  history | grep snow
+magno@xenon:~/www/rest001$
